@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  card: 
+  effect_type: 
+  parameter_json: MyString
+  change: MyString
+  condition_code: MyString
+
+two:
+  card: 
+  effect_type: 
+  parameter_json: MyString
+  change: MyString
+  condition_code: MyString

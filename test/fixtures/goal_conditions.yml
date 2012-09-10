@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  goal_group: 
+  goal_entity: 
+  entity_id: 
+
+two:
+  goal_group: 
+  goal_entity: 
+  entity_id: 

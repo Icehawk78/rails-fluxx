@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  card: 
+  effect_type: 
+  parameter_json: MyText
+  order: 
+
+two:
+  card: 
+  effect_type: 
+  parameter_json: MyText
+  order: 
