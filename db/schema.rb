@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120910184534) do
+ActiveRecord::Schema.define(:version => 20120913191116) do
 
   create_table "action_effects", :force => true do |t|
     t.integer  "card_id"
@@ -158,9 +158,11 @@ ActiveRecord::Schema.define(:version => 20120910184534) do
     t.integer  "required_count"
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
+    t.integer  "effect_type_id"
   end
 
   add_index "goal_groups", ["card_id"], :name => "index_goal_groups_on_card_id"
+  add_index "goal_groups", ["effect_type_id"], :name => "index_goal_groups_on_effect_type_id"
 
   create_table "keeper_effects", :force => true do |t|
     t.integer  "card_id"

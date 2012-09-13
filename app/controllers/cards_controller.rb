@@ -1,4 +1,4 @@
-class CardsController < ActionController::Base
+class CardsController < ActionController::ApplicationController
   handles_sortable_columns
 
   def index

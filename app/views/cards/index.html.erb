@@ -7,8 +7,7 @@
       <th><%= sortable_column "Name", :column => "name" %></th>
       <th><%= sortable_column "Description", :column => "description" %></th>
       <th><%= sortable_column "Card Type", :column => "card_type_id" %></th>
-      <th><%= sortable_column "Created", :column => "created_at" %></th>
-      <th><%= sortable_column "Edited", :column => "updated_at" %></th>
+      <th>Effect Methods</th>
     </tr>
   </thead>
   <tbody>
@@ -18,8 +17,13 @@
       <td><%= card.name %></td>
       <td><%= card.description %></td>
       <td><%= card.card_type.description %></td>
-      <td><%= card.created_at %></td>
-      <td><%= card.updated_at %></td>
+      <td>
+        <ul>
+        <% card.effects.each do |effect| %>
+          <li><%= effect.effect_type.method %></li>
+        <% end %>
+        </ul>
+      </td>
     </tr>
   <% end %>
   </tbody>
